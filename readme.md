@@ -226,22 +226,8 @@ INSERT INTO path_analysis.path_series VALUES
 ,	(43,'Portugal',5,4)
 ,	(43,'Canada',6,5)
 ,	(43,'Switzerland',7,5)
-
-
-INSERT INTO path_analysis.path_series VALUES	
-	(0,'a',1)
-,	(0,'b',2)
-,	(0,'c',3)
-,	(0,'d',4)
-,	(1,'a',1)
-,	(1,'b',2)
-,	(1,'d',3)
-,	(2,'a',1)
-,	(2,'c',2)
-,	(2,'d',3)
-,	(2,'e',4)
-,	(2,'f',5)
 ;
+
 ```
 ## Top Destinations
 
@@ -250,6 +236,8 @@ INSERT INTO path_analysis.path_series VALUES
 SELECT path, COUNT(*) FROM path_analysis.path_series
 GROUP BY 1 ORDER BY 2 DESC
 ```
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/top_destinations_table.png)
 
 ## Basic Flight Paths (Nonoverlapping)
 
@@ -273,6 +261,10 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/basic_path_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/all_paths.png)
 
 ## Basic Flight Paths (overlapping)
 
@@ -299,7 +291,6 @@ SELECT * FROM npath
 
 ## Get path from Philippines
 
-
 ```
 -- PATH FROM 'Philippines'
 
@@ -321,6 +312,10 @@ SELECT * FROM npath
 	ORDER BY cnt DESC	
 ; 		
 ```
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/path_from_ph_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/path_from_ph.png)
 
 ## Get path to Philippines
 
@@ -346,6 +341,10 @@ SELECT * FROM npath
 ; 		
 ```
 
+![Alt text](https://github.com/docligot/path_analysis/blob/main/path_to_ph_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/path_to_ph.png)
+
 ## Any 3 destinations
 
 ```
@@ -369,6 +368,10 @@ SELECT * FROM npath
 	ORDER BY cnt DESC	
 ; 		
 ```
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/3_destinations_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/3_destinations.png)
 
 ## 3 Destinations from Philippines
 
@@ -394,6 +397,10 @@ SELECT * FROM npath
 ; 		
 ```
 
+![Alt text](https://github.com/docligot/path_analysis/blob/main/ph_plus_2_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/ph_plus_2.png)
+
 ## Any 3 destinations to Philippines
 
 ```
@@ -418,6 +425,10 @@ SELECT * FROM npath
 ; 		
 ```
 
+![Alt text](https://github.com/docligot/path_analysis/blob/main/2_plus_ph_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/2_plus_ph.png)
+
 ## Any destination from and to Estonia
 
 ```
@@ -441,3 +452,7 @@ SELECT * FROM npath
 	ORDER BY cnt DESC	
 ; 		
 ```
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/between_estonia_table.png)
+
+![Alt text](https://github.com/docligot/path_analysis/blob/main/between_estonia.png)
