@@ -261,6 +261,7 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ![Alt text](https://github.com/docligot/path_analysis/blob/main/basic_path_table.png)
 
@@ -268,6 +269,7 @@ SELECT * FROM npath
 
 ## Basic Flight Paths (overlapping)
 
+```
 -- CREATE BASIC PATH
 
 SELECT * FROM npath		
