@@ -322,8 +322,8 @@ SELECT * FROM npath
 ; 		
 
 ## Get path to Philippines
-```
 
+```
 -- PATH TO 'Philippines'
 
 SELECT * FROM npath		
@@ -367,6 +367,7 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## 3 Destinations from Philippines
 
