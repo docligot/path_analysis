@@ -320,6 +320,7 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## Get path to Philippines
 
