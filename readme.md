@@ -2,6 +2,7 @@
 
 ## Creating the Flight Tables
 
+```
 -- CREATING THE TABLES
 CREATE SCHEMA path_analysis;
 
@@ -241,15 +242,18 @@ INSERT INTO path_analysis.path_series VALUES
 ,	(2,'e',4)
 ,	(2,'f',5)
 ;
-
+```
 ## Top Destinations
 
+```
 -- Top Destinations
 SELECT path, COUNT(*) FROM path_analysis.path_series
 GROUP BY 1 ORDER BY 2 DESC
+```
 
 ## Basic Flight Paths (Nonoverlapping)
 
+```
 -- CREATE BASIC PATH
 
 SELECT * FROM npath		
@@ -291,9 +295,12 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## Get path from Philippines
 
+
+```
 -- PATH FROM 'Philippines'
 
 SELECT * FROM npath		
@@ -315,6 +322,7 @@ SELECT * FROM npath
 ; 		
 
 ## Get path to Philippines
+```
 
 -- PATH TO 'Philippines'
 
@@ -335,9 +343,11 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## Any 3 destinations
 
+```
 -- CREATE ANY 3 DESTINATION OVERLAPPING
 
 SELECT * FROM npath		
@@ -360,6 +370,7 @@ SELECT * FROM npath
 
 ## 3 Destinations from Philippines
 
+```
 -- CREATE ANY 3 DESTINATION FROM 'Philippines'
 
 SELECT * FROM npath		
@@ -379,9 +390,11 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## Any 3 destinations to Philippines
 
+```
 -- CREATE ANY 3 DESTINATION TO 'Philippines'
 
 SELECT * FROM npath		
@@ -401,9 +414,11 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
 
 ## Any destination from and to Estonia
 
+```
 -- CREATE ANY DESTINATIONS BETWEEN 'Estonia'
 
 SELECT * FROM npath		
@@ -423,3 +438,4 @@ SELECT * FROM npath
 	)	
 	ORDER BY cnt DESC	
 ; 		
+```
