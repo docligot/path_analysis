@@ -1,5 +1,7 @@
 # Flight Path Analysis
 
+nPath scripts for generating path analysis and pattern matching. Visualizations are using sigma and sankey diagrams. 
+
 ## Creating the Flight Tables
 
 ```
